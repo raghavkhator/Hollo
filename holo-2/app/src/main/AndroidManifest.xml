@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iecsemanipal.holocaust">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".application.Holocaust"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:parentActivityName=".activities.SplashActivity" />
+        <activity
+            android:name=".activities.RegistrationActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.LinkIDActivity"
+            android:parentActivityName=".activities.RegistrationActivity" />
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.EventsActivity"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity android:name=".activities.AttendanceActivity"
+            android:parentActivityName=".activities.EventsActivity"/>
+    </application>
+
+</manifest>
