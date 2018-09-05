@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bottom_nav_scan"
+        android:title="@string/scan"
+        android:icon="@drawable/ic_scan"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/bottom_nav_registered"
+        android:title="@string/registered"
+        android:icon="@drawable/ic_success"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/bottom_nav_pending"
+        android:title="@string/pending"
+        android:icon="@drawable/ic_pending"
+        app:showAsAction="always"/>
+
+</menu>
